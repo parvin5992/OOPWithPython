@@ -1,21 +1,21 @@
 #*******************************single inheritance*************************************
-class A:
-    def __init__(self):
-        print("run init of A class")
+# class A:
+#     def __init__(self):
+#         print("run init of A class")
 
-    def showA(self):
-        print("AAAAA")
+#     def showA(self):
+#         print("AAAAA")
 
-# ---------------------------------------------------------------
-class B(A):
-    def __init__(self):
-        A.__init__(self)
-        print("run init of B class")
+# # ---------------------------------------------------------------
+# class B(A):
+#     def __init__(self):
+#         A.__init__(self)
+#         print("run init of B class")
         
-    def showB(self):
-        print("BBBBB")
-# ---------------------------------------------------------------
-b=B()
+#     def showB(self):
+#         print("BBBBB")
+# # ---------------------------------------------------------------
+# b=B()
 # b.showA()
 # b.showB()
 # #================================================================================================
@@ -81,7 +81,7 @@ b=B()
 # f.showB()
 # f.showC()
 # #================================================================================================
-# *********************************hierachical inheritance***********************************
+# # *********************************hierachical inheritance***********************************
 # class A:
 #     def __init__(self):
 #         print("run init of A class")
@@ -110,45 +110,45 @@ b=B()
 # c=C()
 # b.showA()
 # b.showB()
-# # c.showA()
+# c.showA()
 # c.showC()
 # ================================================================================================
 # *********************************Hybrid inheritance***********************************
-# class A:
-#     def __init__(self):
-#         print("run init of A class")
+class A:
+    def __init__(self):
+        print("run init of A class")
 
-#     def showA(self):
-#         print("AAAAA")
+    def showA(self):
+        print("AAAAA")
 
 # # ---------------------------------------------------------------
-# class B(A):
-#     def __init__(self):
-#         A.__init__(self)
-#         print("run init of B class")
+class B(A):
+    def __init__(self):
+        A.__init__(self)
+        print("run init of B class")
         
-#     def showB(self):
-#         print("BBBBB")
+    def showB(self):
+        print("BBBBB")
 # # ---------------------------------------------------------------
-# class C(A):
-#     def __init__(self):
-#         A.__init__(self)
-#         print("run init of C class")
+class C(A):
+    def __init__(self):
+        A.__init__(self)
+        print("run init of C class")
         
-#     def showC(self):
-#         print("CCCCC")
+    def showC(self):
+        print("CCCCC")
 #  # ---------------------------------------------------------------
-# class D(B,C):
-#     def __init__(self):
-#         B.__init__(self)
-#         C.__init__(self)
-#         print("run init of D class")
+class D(B,C):
+    def __init__(self):
+        B.__init__(self)
+        C.__init__(self)
+        print("run init of D class")
         
-#     def showD(self):
-#         print("DDDDD")       
+    def showD(self):
+        print("DDDDD")       
 # # ---------------------------------------------------------------
-# d=D()
-# d.showA()
-# d.showC()
-# d.showB()
-# d.showD()
+d=D()
+d.showA()
+d.showC()
+d.showB()
+d.showD()
